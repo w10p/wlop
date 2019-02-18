@@ -1,6 +1,6 @@
 window.onload = init;
-console.ward = function() {}; // what warnings?
-
+console.ward = function() {};
+// what warnings?
 function init() {
   var root = new THREERoot({
     createCameraControls: !true,
@@ -132,7 +132,8 @@ function Slide(width, height, animationPhase) {
       control0.copy(centroid).sub(getControlPoint0(centroid));
       control1.copy(centroid).sub(getControlPoint1(centroid));
     }
-    else { // out
+    else { 
+    // out
       control0.copy(centroid).add(getControlPoint0(centroid));
       control1.copy(centroid).add(getControlPoint1(centroid));
     }
