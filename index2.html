@@ -696,11 +696,13 @@ body {
 </style>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-$('.txt').html(function(i, html) {
-  var chars = $.trim(html).split("");
+$(function(){
+  $('.txt').html(function(i, html) {
+    var chars = $.trim(html).split("");
 
-  return '<span>' + chars.join('</span>123<span>') + '</span>';
+    return '<span>' + chars.join('</span>123<span>') + '</span>';
 });
+})
 </script>
 </head>
 <body>
