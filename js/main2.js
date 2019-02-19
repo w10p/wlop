@@ -1,5 +1,7 @@
-$('.text').html(function(i, html) {
-  var chars = $.trim(html).split("");
+$(function(){
+  $('.text').html(function(i, html) {
+    var chars = $.trim(html).split("");
 
-  return '<span>' + chars.join('</span><span>') + '</span>';
-});
+    return '<span>' + chars.join('</span><span>') + '</span>';
+  });
+})
